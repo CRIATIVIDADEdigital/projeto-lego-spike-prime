@@ -26,6 +26,8 @@
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script> 
     <script type="text/javascript" src="assets/js/lendozip.js"></script>
 
+	<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v7.0&appId=2385506498151963&autoLogAppEvents=1" nonce="OUfYHNbR"></script>
 </head> 
 
 <body>    
@@ -134,16 +136,16 @@ style="width:90%; height:500px;" frameborder="0"></iframe>
 				<h2 class="section-heading text-center mb-4">Programação</h2>
 				<img src="" alt="asd" id="temp" />
 				<script type="text/javascript">
-					var loader = new ZipLoader('https://raw.githubusercontent.com/{{page.usuario}}/{{page.repositorio}}/master/Futebol.llsp');
+					var loader = new ZipLoader('https://raw.githubusercontent.com/{{page.usuario}}/{{page.repositorio}}/master/{{page.arquivo}}.llsp');
 					(function($) {
 							$(document).ready(function() {
-									$("#temp").attr('src', loader.loadImage('https://raw.githubusercontent.com/{{page.usuario}}/{{page.repositorio}}/master/Futebol.llsp://icon.svg'));
+									$("#temp").attr('src', loader.loadImage('https://raw.githubusercontent.com/{{page.usuario}}/{{page.repositorio}}/master/{{page.arquivo}}.llsp://icon.svg'));
 							});
 					})(jQuery)
 			</script>
 			<center>
 				<br>
-				<button type="submit" onclick="window.open('https://raw.githubusercontent.com/{{page.usuario}}/{{page.repositorio}}/master/Futebol.llsp');"class="btn btn-primary btn-submit mb-3 mb-md-0"><i class="fas fa-file-download"></i>&nbsp;&nbsp;&nbsp;Baixar programa</button>
+				<button type="submit" onclick="window.open('https://raw.githubusercontent.com/{{page.usuario}}/{{page.repositorio}}/master/{{page.arquivo}}.llsp');"class="btn btn-primary btn-submit mb-3 mb-md-0"><i class="fas fa-file-download"></i>&nbsp;&nbsp;&nbsp;Baixar programa</button>
 			</center>
 
 	    </div><!--//container-->
@@ -183,4 +185,3 @@ style="width:90%; height:500px;" frameborder="0"></iframe>
 
 </body>
 </html> 
-
